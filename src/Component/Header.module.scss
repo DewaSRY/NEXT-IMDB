@@ -1,0 +1,86 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60rem;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.Menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo {
+    margin: 1.5rem;
+
+    a {
+        text-decoration: none;
+        color: rgb(26, 24, 24);
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 1.5rem;
+            span {
+                font-weight: 600;
+                background-color: rgb(233, 121, 16);
+                padding: 1rem 0.5rem;
+                border-radius: 5px;
+                border: solid 1px rgba(0, 0, 0, 0.332);
+                & ~ span {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+.Menu-Item {
+    display: inline;
+    margin: 1rem;
+    a {
+        text-decoration: none;
+        color: rgb(26, 24, 24);
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        p {
+            display: inline;
+            display: flex;
+            margin: 1rem;
+            align-items: center;
+        }
+        svg {
+            display: none;
+            font-size: 2rem;
+        }
+        &:hover {
+            color: rgb(233, 121, 16);
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .Menu-Item {
+        a {
+            p {
+                display: none;
+            }
+            svg {
+                display: inline;
+            }
+        }
+    }
+    .Logo {
+        a {
+            h2 {
+                span {
+                    padding: 2rem;
+                    & ~ span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
