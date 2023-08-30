@@ -1,0 +1,29 @@
+.error {
+    margin: auto;
+    max-width: 60rem;
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    background-color: inherit;
+    filter: brightness(90%);
+    div {
+        height: 20rem;
+        position: relative;
+        width: 100%;
+        h2 {
+            background-color: rgb(12, 12, 162);
+            padding: 0.3rem;
+        }
+        p {
+            margin: 1rem;
+        }
+        button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            padding: 0.3rem;
+            cursor: pointer;
+        }
+    }
+}
