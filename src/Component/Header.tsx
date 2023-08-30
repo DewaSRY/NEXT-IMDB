@@ -1,8 +1,10 @@
+import { DarkModeSwitch } from "./DarkModeSwitch";
 import style from "./Header.module.scss";
 import Link from "next/link";
 import { FC } from "react";
 import { IconType } from "react-icons";
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
+
 interface MenuItemProps {
   title: string;
   address: string;
@@ -31,6 +33,7 @@ const Header: FC<HeaderProps> = (): JSX.Element => {
       </div>
 
       <div className={style.Logo}>
+        <DarkModeSwitch />
         <Link href="/">
           <h2>
             <span>IMDB</span>

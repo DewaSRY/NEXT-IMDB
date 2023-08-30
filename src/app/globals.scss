@@ -1,0 +1,40 @@
+* {
+  transition-duration: 0.5s;
+}
+:root {
+  --primeColor: #e8780f;
+  /* Your default theme */
+  --background: whitesmoke;
+  --fontColor: black;
+}
+
+[data-theme="dark"] {
+  --background: #475569;
+  --fontColor: #e5e7eb;
+}
+svg {
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  color: var(--fontColor);
+  &:hover {
+    color: var(--primeColor);
+  }
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+  &:hover {
+    filter: brightness(90%);
+  }
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+body {
+  background-color: var(--background);
+  color: var(--fontColor);
+}

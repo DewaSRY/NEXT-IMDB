@@ -1,7 +1,8 @@
 import Header from "@/Component/Header";
-import "./globals.css";
+import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Provider from "./Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light" suppressHydrationWarning={true}>
       <body className={inter.className}>
-        <Header />
-        {/* header */}
-        {/* navbar */}
-        {/* Search Box */}
-        {children}
+        <Provider>
+          <Header />
+          {/* header */}
+          {/* navbar */}
+          {/* Search Box */}
+          {children}
+        </Provider>
       </body>
     </html>
   );
