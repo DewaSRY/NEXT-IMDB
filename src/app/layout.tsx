@@ -1,5 +1,6 @@
-import Header from "@/Component/Header";
 import "./globals.scss";
+import Header from "@/Component/Header/Header";
+import Navbar from "@/Component/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Provider from "./Provider";
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Provider>
           <Header />
           {/* header */}
+          <Navbar />
           {/* navbar */}
           {/* Search Box */}
           {children}

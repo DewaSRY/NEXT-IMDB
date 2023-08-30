@@ -1,0 +1,25 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--background);
+    filter: brightness(150%);
+}
+// .NavBar-Item {
+
+// }
+.active {
+    position: relative;
+    padding: 0.2rem;
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--primeColor);
+        padding: 0.1rem;
+    }
+}

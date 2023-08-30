@@ -27,9 +27,11 @@ a {
   display: flex;
   align-items: center;
   color: var(--fontColor);
+  margin-right: 0.5rem;
   &:hover {
     filter: brightness(90%);
   }
+
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
