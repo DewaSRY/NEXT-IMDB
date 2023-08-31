@@ -1,0 +1,32 @@
+.result {
+    display: grid;
+    max-width: 100rem;
+    margin: auto;
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 480px) {
+    .result {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media screen and (min-width: 860px) {
+    .result {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media screen and (min-width: 1200px) {
+    .result {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media screen and (min-width: 1500px) {
+    .result {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
