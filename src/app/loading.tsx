@@ -4,9 +4,17 @@ interface LoadingProps {}
 
 const Loading: NextPage<LoadingProps> = () => {
   return (
-    <>
-      <Image src="/Loading.svg" alt="loading" width={200} />
-    </>
+    <div
+      style={{
+        widows: "100%",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Image src="/Loading.svg" alt="loading" width={200} height={200} />
+    </div>
   );
 };
 
